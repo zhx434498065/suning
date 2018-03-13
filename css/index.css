@@ -8,7 +8,99 @@
   url('https://at.alicdn.com/t/font_563392_a6ru0iub1i08jjor.ttf') format('truetype'),
   url('https://at.alicdn.com/t/font_563392_a6ru0iub1i08jjor.svg#iconfont') format('svg');
 }
+@font-face {
+	font-family: 'iconfont';  /* project id 563790 */
+	src: url('https://at.alicdn.com/t/font_563790_w7c9cdgv1xqx5hfr.eot');
+	src: url('https://at.alicdn.com/t/font_563790_w7c9cdgv1xqx5hfr.eot?#iefix') format('embedded-opentype'),
+	url('https://at.alicdn.com/t/font_563790_w7c9cdgv1xqx5hfr.woff') format('woff'),
+	url('https://at.alicdn.com/t/font_563790_w7c9cdgv1xqx5hfr.ttf') format('truetype'),
+	url('https://at.alicdn.com/t/font_563790_w7c9cdgv1xqx5hfr.svg#iconfont') format('svg');
+}
+.banner_you img.active{
+	z-index: 1;
+}
 
+.lunbo{
+	position: absolute;
+	bottom: 20px;
+	right: 200px;
+	z-index: 2;
+	/*background-color: #fff;*/
+}
+.imgbox li{
+	position: absolute;
+	top: 0;
+	transition: all 1s;
+	opacity: .5;
+}
+.lunbo_zuo{
+	height: 69px;
+	width: 41px;
+	background-image: url("../img/icon-slides.png");
+	background-position:   0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	/*background-color: red;*/
+	z-index: 7;
+	opacity: 0;
+}
+.lunbo_you{
+	height: 69px;
+	width: 41px;
+	background-image: url("../img/icon-slides.png");
+	background-position:-41px 0;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	margin: auto;
+	right: 0;
+	z-index: 7;
+	opacity: 0;
+}
+.banner_you:hover .lunbo_zuo,.banner_you:hover .lunbo_you{
+	opacity: 0.6;
+}
+.imgbox li.active{
+	z-index: 1;
+	opacity: 1;
+}
+.lunbo li.active{
+	background-color: #000;
+}
+.lunbo li:hover{
+	background-color: #fff;
+}
+.lunbo li:active{
+	background-color: red;
+}
+.lunbo li{
+	width: 6px;
+	height: 6px;
+	border-radius: 6px;
+	margin: 0 10px;
+	border: 2px solid #fff;
+	float: left;
+	background-color: red;
+	transition: all 1s;
+
+	/*width: 6px;*/
+	/*height: 6px;*/
+	/*margin: 0 10px;*/
+	/*background-color: #ccc;*/
+	/*float: left;*/
+	/*border-radius: 50%;*/
+	/*border: 2px solid #fff;*/
+	/*cursor: pointer;*/
+	/*transition: all .8s linear;*/
+}
+.banner_you{
+	position: relative;
+}
+.banner_xiaotukuang1,.banner_xiaotukuang2{
+	z-index: 4;
+}
 .zuidingbubeijing{
 	height: 36px;
 	width: 100%;
@@ -197,6 +289,7 @@
 	line-height: 38px;
 	margin-right: 13px;
 	font-weight: 900;
+	float: left;
 }
 .daohang_tu img{
 	float: right;
@@ -2576,3 +2669,147 @@
 .nav_fuhao:hover{
 	transform:rotate(180deg);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.zuizuishangshang{
+	background-color: #ccc;
+	position: fixed;
+	top: 0;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	margin:auto;
+	width: 1190px;
+	height: 60px;
+	display: none;
+}
+.zuizuishangshang_left{
+	height: 50px;
+	width: 300px;
+	background-color: #1d1d1d;
+	position: fixed;
+	margin-top: 5px;
+	margin-left: 2	0px;
+}
+.zuizuishangshang_left_yincang{
+	width: 100%;
+	height: 0;
+	background-color: #ccc;
+	margin-top: 50px;display: none;
+}
+.zuizuishangshang_left_yincang li{
+	line-height: 200px;
+	text-align: center;
+	font-size: 50px;
+}
+.zuizuishangshang_left_yincang div.active{
+	z-index: 20;
+}
+.zuizuishangshang_left_yincang1{
+	width: 1000px;
+	height: 500px;
+	background-color: red;
+	position: absolute;
+	left: 300px;
+	top: 50px;
+	line-height: 500px;
+	text-align: center;
+	font-size: 50px;
+	display: none;
+}
+.zuizuishangshang_right{
+	width: 300px;
+	height: 50px;
+	font-size: 10px;
+	position: absolute;
+	right: 0;
+	line-height: 50px;
+	margin-top: 5px;
+	/*text-align: center;*/
+}
+.zuizuishangshang_right h2{
+	float: left;
+	margin-left: 10px;
+}
+.zuizuishang{
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	/*top:0;*/
+	/*bottom: 0;*/
+	margin-top: 10px;
+}
+.pingmuleft{
+	width: 100px;
+	height: 400px;
+	background-color: #ccc;
+	position: fixed;
+	top: 30%;
+	left: 50%;
+	z-index: 10;
+	display: none;
+}
+.pingmuleft li{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+}
+.pingmuleft li.active{
+	background-color: #ff6700;
+	color: #fff;
+}
+.pingmuleft li:hover{
+	background: #ff6700;
+	color: #fff;
+}
+.huidaozuishang:hover{
+	background-color: #ff6700;color: #fff;
+}
+.huidaozuishang{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
